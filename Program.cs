@@ -10,6 +10,12 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
+            ReadFileInput fileInput = new ReadFileInput();
+            fileInput.readline();
+            fileInput.compare();
+            Console.Read();
         }
+
+
     }
 }
