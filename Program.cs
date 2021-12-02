@@ -13,6 +13,7 @@ namespace AdventOfCode
             ReadFileInput fileInput = new ReadFileInput();
             fileInput.readline();
             fileInput.compare();
+            //fileInput.compareparttwo();
             Console.Read();
         }
 

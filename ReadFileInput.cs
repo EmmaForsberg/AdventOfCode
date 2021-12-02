@@ -15,30 +15,32 @@ namespace AdventOfCode
             foreach (var item in lines)
             {
                 int number = int.Parse(item);
+
                 numbers.Add(number);
             }
         }
 
+
+        //Part one
         public void compare()
         {
-            int numbbs = 0;
+            int previousnumber = 0;
             int count = 0;
-           
 
-            foreach (var numb in numbers)
+            for (int i = 1; i < numbers.Count; i++)
             {
-
-                if (numbbs < numb)
+                if (previousnumber < numbers[i] )
                 {
                     count++;
                 }
-                numbbs = numb;
+                previousnumber = numbers[i];  
             }
-            Console.WriteLine(count - 1);
-
+            Console.WriteLine(count);
         }
 
-
-
+        public void compareparttwo()
+        {
+           
+        }
     }
 }
