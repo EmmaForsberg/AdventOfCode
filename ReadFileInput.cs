@@ -40,7 +40,10 @@ namespace AdventOfCode
 
         public void compareparttwo()
         {
-           
+            for (int i = 1; i < numbers.Count; i++)
+            {
+
+            }
         }
     }
 }
