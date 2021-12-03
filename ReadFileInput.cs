@@ -6,17 +6,12 @@ namespace AdventOfCode
 {
     internal class ReadFileInput
     {
-        string[] line = System.IO.File.ReadAllLines(@"Days\Day2.txt");
+        string[] line = System.IO.File.ReadAllLines(@"Days\Day3.txt");
 
         public string[] ReadFile()
         {
-
-            return line;
-          
-
+            return line;        
         }
-
-
 
         string[] lines = System.IO.File.ReadAllLines(@"Days\Day1.txt");
 
@@ -29,7 +24,6 @@ namespace AdventOfCode
                 int number = int.Parse(item);
 
                 numbers.Add(number);
-
             }
             return numbers;
         }

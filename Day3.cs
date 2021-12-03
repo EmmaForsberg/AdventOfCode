@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
-    internal class Program
+    internal class Day3
     {
-        static void Main(string[] args)
-        {
+        public void Main()
+        {  
             ReadFileInput fileInput = new ReadFileInput();
-            Day3 day3 = new Day3();
-            day3.Main();
-            
+            string[] lines = fileInput.ReadFile();
 
-            Console.Read();
         }
     }
 }
