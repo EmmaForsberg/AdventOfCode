@@ -11,12 +11,13 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             ReadFileInput fileInput = new ReadFileInput();
-            fileInput.readline();
-            fileInput.compare();
-            //fileInput.compareparttwo();
+            List<int> numberlist = fileInput.readline();
+
+            Day1 day1 = new Day1();
+            day1.comparepartone(numberlist);
+            day1.compareparttwo(numberlist);
+
             Console.Read();
         }
-
-
     }
 }
