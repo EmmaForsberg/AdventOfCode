@@ -12,10 +12,7 @@ namespace AdventOfCode
         {
             ReadFileInput fileInput = new ReadFileInput();
             List<int> numberlist = fileInput.readline();
-
-            Day1 day1 = new Day1();
-            day1.comparepartone(numberlist);
-            day1.compareparttwo(numberlist);
+            
 
             Console.Read();
         }
