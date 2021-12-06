@@ -33,7 +33,34 @@ namespace AdventOfCode
 
             var result = gammarate * epilsonrate;
             Console.WriteLine(result);
+        }
+
+        public void Parttwo()
+        {
+            ReadFileInput fileInput = new ReadFileInput();
+            string[] lines = fileInput.ReadFile();
+
+            var lengthofline = lines[0].Length;
+
+            char[] gamma = new char[lengthofline];
+            char[] epilson = new char[lengthofline];
+
+            for (int i = 0; i < lengthofline; i++)
+            {
+         
+
+                
+                var keepones = lines.Select(x => x[i]).Count(x => x == '1');
+                
+
+
+           
+
+            }
+         
 
         }
+
+
     }
 }

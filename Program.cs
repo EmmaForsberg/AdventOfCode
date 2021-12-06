@@ -12,7 +12,7 @@ namespace AdventOfCode
         {
             ReadFileInput fileInput = new ReadFileInput();
             Day3 day3 = new Day3();
-            day3.Main();
+            day3.Parttwo();
             
 
             Console.Read();
