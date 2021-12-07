@@ -10,10 +10,9 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            ReadFileInput fileInput = new ReadFileInput();
-            Day3 day3 = new Day3();
-            day3.Parttwo();
-            
+            //ReadFileInput fileInput = new ReadFileInput();
+            Day6 day6 = new Day6();
+            day6.Main();
 
             Console.Read();
         }

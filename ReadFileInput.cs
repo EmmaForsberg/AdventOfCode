@@ -13,19 +13,30 @@ namespace AdventOfCode
             return line;        
         }
 
-        string[] lines = System.IO.File.ReadAllLines(@"Days\Day1.txt");
+        string[] lines = System.IO.File.ReadAllLines(@"Days\Day6.txt");
+        
 
         public List<int> numbers = new List<int>();
 
         public List<int> readline()
         {
+
+
             foreach (var item in lines)
             {
-                int number = int.Parse(item);
+                var x = item.Split(',');
 
-                numbers.Add(number);
+                foreach (var items in x)
+                {
+                    int number = int.Parse(items);
+
+                    numbers.Add(number);
+                }
+          
             }
             return numbers;
         }
+
+
     }
 }
